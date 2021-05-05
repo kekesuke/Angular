@@ -1,0 +1,12 @@
+<div>
+  <h1>Orders DB</h1>
+  <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+
+    <label for="Spid">SPID:</label>
+    <input type="text" class="fortextbox" name="spid" placeholder="" formControlName="spid" readonly>
+    <label for="lname">Name:</label>
+    <input type="text" class="fortextbox" name="name" placeholder="" formControlName="name">
+    <input type="submit" class="forsubmit" value="Update">
+  </form>
+</div>
+<div class="error">{{ this.salesperson.message }}</div>
